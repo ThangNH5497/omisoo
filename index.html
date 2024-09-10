@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang với Hình Nền và Văn Bản</title>
+    <style>
+        /* Đặt nền hình ảnh cho toàn bộ trang */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('background.png'); /* Thay thế 'hinh-nen.jpg' bằng đường dẫn đến hình ảnh của bạn */
+            background-size: cover; /* Đảm bảo hình ảnh trải toàn bộ chiều rộng và chiều cao */
+            background-position: center; /* Canh giữa hình ảnh */
+            background-repeat: no-repeat; /* Không lặp lại hình ảnh nền */
+            display: flex;
+            align-items: center; /* Căn giữa theo chiều dọc */
+            justify-content: center; /* Căn giữa theo chiều ngang */
+            color: rgb(255, 255, 255); /* Màu chữ */
+            font-family: Arial, sans-serif; /* Phông chữ */
+            text-align: center; /* Căn giữa văn bản */
+            height: 100vh; /* Đảm bảo chiều cao của body chiếm toàn bộ viewport */
+        }
+        
+        /* Tạo một lớp phủ để làm cho văn bản nổi bật hơn nếu cần */
+        .overlay {
+            background: rgba(241, 199, 199, 0.5); /* Màu nền tối với độ trong suốt 50% */
+            padding: 20px; /* Khoảng cách xung quanh văn bản */
+            border-radius: 10px; /* Bo tròn góc */
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>Omisoo đang bảo trì hệ thống</h1>
+        <p style="color: chocolate;">Bạn có thể tìm chúng tôi qua <a href="https://shopee.vn/shop/1330496003">shopee ở đây</a></p>
+    </div>
+</body>
+</html>
